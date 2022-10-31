@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="297.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.task11sprint3.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <Label prefHeight="30.0" prefWidth="99.0" text="Registrera dig!" textAlignment="CENTER">
+      <font>
+         <Font name="Franklin Gothic Medium" size="14.0" />
+      </font>
+   </Label>
+   <HBox prefHeight="0.0" prefWidth="11.0">
+      <children>
+         <Label prefHeight="18.0" prefWidth="56.0" text="Förnamn: ">
+            <HBox.margin>
+               <Insets top="4.0" />
+            </HBox.margin></Label>
+         <TextField fx:id="förnamnInput">
+            <HBox.margin>
+               <Insets left="7.0" />
+            </HBox.margin></TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="20.0" prefWidth="252.0">
+      <children>
+         <Label text="Efternamn: ">
+            <HBox.margin>
+               <Insets top="4.0" />
+            </HBox.margin></Label>
+         <TextField fx:id="efternamnInput">
+            <HBox.margin>
+               <Insets left="2.0" />
+            </HBox.margin></TextField>
+      </children>
+   </HBox>
+   <HBox prefHeight="6.0" prefWidth="250.0">
+      <children>
+         <Label alignment="CENTER" text="Mailadress: " textAlignment="CENTER">
+            <opaqueInsets>
+               <Insets />
+            </opaqueInsets>
+            <HBox.margin>
+               <Insets top="4.0" />
+            </HBox.margin></Label>
+         <TextField fx:id="emailInput" prefHeight="10.0" prefWidth="150.0">
+            <HBox.margin>
+               <Insets left="1.0" />
+            </HBox.margin></TextField>
+      </children>
+   </HBox>
+    <Button fx:id="spara" onAction="#onSparaButtonClick" text="Spara" />
+
+    <Label fx:id="saveToFileText" />
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+</VBox>
